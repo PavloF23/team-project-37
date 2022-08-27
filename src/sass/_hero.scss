@@ -3,12 +3,29 @@
     margin-top: 60px;
 }
 
-.hero__titel {
+.hero__box {
+    @media screen and (min-width: 1280px) {
+    
+    }
+}
+
+.hero__title {
     font-weight: 700;
     font-size: 28px;
     line-height: calc(33/28);
 
     color: $primary-text-color;
+
+    @media screen and (min-width: 768px) {
+        font-size: 42px;
+        line-height: 120%;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 156px;
+        font-size: 48px;
+        width: 502px;
+    }
 }
 
 .hero__text{
@@ -17,10 +34,26 @@
     line-height: 150%;
 
     padding-top: 28px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        
+        padding-top: 44px;
+        width: 336px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 28px;        
+        width: 502px;
+    }
 }
 
 .hero__btn {
     margin-top: 28px;
+
+    @media screen and (min-width: 768px) {
+         margin-top: 40px;
+    }
 }
 
 .slider {
