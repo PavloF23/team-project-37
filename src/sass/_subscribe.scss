@@ -1,28 +1,35 @@
 // Subscribe
-.subscribe-section {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-@media screen and (min-width:768px) {
-    .subscribe-section {
-        margin-left: 32px;
-        margin-right: 32px;
-    }
-}
-
-
-
-@media screen and (min-width:1280px) {
-    .subscribe-section {
-        margin-left: 16px;
-        margin-right: 16px;
-    }
-}
+// .subscribe-section {
+//     margin-left: 20px;
+//     margin-right: 20px;
+// }
+// @media screen and (min-width:768px) {
+//     .subscribe-section {
+//         margin-left: 32px;
+//         margin-right: 32px;
+//     }
+// }
+// @media screen and (min-width:1280px) {
+//     .subscribe-section {
+//         margin-left: 16px;
+//         margin-right: 16px;
+//     }
+// }
 .subscribe-section__container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
 } 
+@media screen and (max-width:767px) {
+    .subscribe-section__container:first-child {
+    align-items: center;
+    }
+}
+@media screen and (min-width:768px) {
+    .subscribe-section__container {
+        align-items: flex-start;
+    }
+}
 @media screen and (min-width:768px) {
     .subscribe-section__picture {
         margin-left: 455px;
@@ -48,6 +55,7 @@
 }
 }
 .subscribe-section__text {
+    display: block;
     text-align: start;
     font-family: $main-fonts;
     font-weight: 400;
@@ -56,14 +64,20 @@
     
     
     color: $primary-text-color;
-    display: block;
-    max-width: 280px;
+    width: 280px;
 }
 @media screen and (min-width:768px) {
     .subscribe-section__text {
         font-size: 16px;
         margin-bottom: 24px;
-        max-width: 656px;
+        width: 656px;
+    }
+}
+@media screen and (min-width:1280px) {
+    .subscribe-section__text {
+        font-size: 16px;
+        margin-bottom: 24px;
+        width: 656px;
     }
 }
 .subscribe-section__input {
@@ -123,4 +137,26 @@ border-radius: 30px;
     color: $primary-text-color;
        
 }
+.subscribe-section__container {
+    position: relative;
+}
+@media screen and (min-width:768px) {
+    .subscribe-section__btn {
+        margin-left: 22px;
+    }
+}
 
+@media screen and (min-width:1280px) {
+    .subscribe-section__btn {
+        margin-left: 32px;
+    }
+}
+.subscribe-section__form .subscribe-section__btn {
+
+    @media screen and (max-width: 767px) {
+        position: absolute;
+
+        right: 20px;
+        bottom: 0;
+    }
+}
