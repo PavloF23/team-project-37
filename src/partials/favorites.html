@@ -7,141 +7,343 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <section class="container section__favorites">
-      <div class="favorites__container">
-        <h1 class="title favorites__title">Some of Our Favorites</h1>
+    <section class="section favorites" id="favorites">
+      <div class="container">
+        <h1 class="favorites__title">Some of Our Favorites</h1>
         <p class="favorites__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
-        <ul class="favorites__list list">
+        <ul class="favorites__list">
           <li class="favorites__item">
-            <a class="favorites__link link" href="">
-              <div class="favorites__thumb">
-                <img
-                  class="favorites__img"
+            <a href="" class="favorites__link">
+              <picture class="favorites__img">
+                <!--Desktop-->
+                <source
+                  media="(min-width: 1280px)"
                   srcset="
-                    images/favorites/gamburger@1x-224.png 224w,
-                    images/favorites/gamburger@1x-268.png 268w,
-                    images/favorites/gamburger@1x-315.png 315w,
-                    images/favorites/gamburger@2x-448.png 448w,
-                    images/favorites/gamburger@2x-536.png 536w,
-                    images/favorites/gamburger@2x-630.png 630w
+                    ./images/favorites/gamburger@1x_lg.png 1x,
+                    ./images/favorites/gamburger@2x_lg.png 2x
                   "
-                  sizes="(min-width: 1280px) 315px, (min-width: 768px) 268px, (max-width: 767px) 224px"
-                  src="images/favorites/gamburger@1x-315.png"
-                  alt="gamburger"
-                  width="315"
-                  height="315"
+                  type="image/png"
                 />
-              </div>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/favorites/gamburger@1x_lg.webp 1x,
+                    ./images/favorites/gamburger@2x_lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <!--Tablet-->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/favorites/gamburger@1x_md.png 1x,
+                    ./images/favorites/gamburger@2x_md.png 2x
+                  "
+                  type="image/png"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/favorites/gamburger@1x_md.webp 1x,
+                    ./images/favorites/gamburger@2x_md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <!--Mobile-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/favorites/gamburger@1x_sm.png 1x,
+                    ./images/favorites/gamburger@2x_sm.png 2x
+                  "
+                  type="image/png"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/favorites/gamburger@1x_sm.webp 1x,
+                    ./images/favorites/gamburger@2x_sm.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <!--fallback-->
+                <img src="./images/favorites/gamburger@1x_sm.png" alt="gamburger" />
+              </picture>
             </a>
           </li>
           <li class="favorites__item">
-            <a class="favorites__link link" href=""
-              ><div class="favorites__thumb">
-                <img
-                  class="favorites__img"
+            <a href="" class="favorites__link">
+              <picture class="favorites__img">
+                <!--Desktop-->
+                <source
+                  media="(min-width: 1280px)"
                   srcset="
-                    images/favorites/Pasta@1x-224.png 224w,
-                    images/favorites/Pasta@1x-268.png 268w,
-                    images/favorites/Pasta@1x-315.png 315w,
-                    images/favorites/Pasta@2x-448.png 448w,
-                    images/favorites/Pasta@2x-536.png 536w,
-                    images/favorites/Pasta@2x-630.png 630w
+                    ./images/favorites/Pasta@1x_lg.png 1x,
+                    ./images/favorites/Pasta@2x_lg.png 2x
                   "
-                  sizes="(min-width: 1280px) 315px, (min-width: 768px) 268px, (max-width: 767px) 224px"
-                  src="images/favorites/Pasta@1x-315.png"
-                  alt="Pasta"
-                  width="315"
-                  height="315"
-                /></div
-            ></a>
-          </li>
-          <li class="favorites__item">
-            <a class="favorites__link link" href=""
-              ><div class="favorites__thumb">
-                <img
-                  class="favorites__img"
-                  srcset="
-                    images/favorites/pizza@1x-224.png 224w,
-                    images/favorites/pizza@1x-268.png 268w,
-                    images/favorites/pizza@1x-315.png 315w,
-                    images/favorites/pizza@2x-448.png 448w,
-                    images/favorites/pizza@2x-536.png 536w,
-                    images/favorites/pizza@2x-630.png 630w
-                  "
-                  sizes="(min-width: 1280px) 315px, (min-width: 768px) 268px, (max-width: 767px) 224px"
-                  src="images/favorites/Pasta@1x-315.png"
-                  alt="pizza"
-                  width="315"
-                  height="315"
+                  type="image/png"
                 />
-              </div>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/favorites/Pasta@1x_lg.webp 1x,
+                    ./images/favorites/Pasta@2x_lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <!--Tablet-->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/favorites/Pasta@1x_md.png 1x,
+                    ./images/favorites/Pasta@2x_md.png 2x
+                  "
+                  type="image/png"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/favorites/Pasta@1x_md.webp 1x,
+                    ./images/favorites/Pasta@2x_md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <!--Mobile-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/favorites/Pasta@1x_sm.png 1x,
+                    ./images/favorites/Pasta@2x_sm.png 2x
+                  "
+                  type="image/png"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/favorites/Pasta@1x_sm.webp 1x,
+                    ./images/favorites/Pasta@2x_sm.webp 2x
+                  "
+                  type="image/webp"
+                />
+            <picture class="favorites__img">
+              <!--Desktop-->
+              <source media="(min-width: 1280px)" srcset="
+                  ./images/favorites/Pasta@1x_lg.png 1x,
+                  ./images/favorites/Pasta@2x_lg.png 2x
+                " type="image/png" />
+              <source media="(min-width: 1280px)" srcset="
+                  ./images/favorites/Pasta@1x_lg.webp 1x,
+                  ./images/favorites/Pasta@2x_lg.webp 2x
+                " type="image/webp" />
+              <!--Tablet-->
+              <source media="(min-width: 768px)" srcset="
+                  ./images/favorites/Pasta@1x_md.png 1x,
+                  ./images/favorites/Pasta@2x_md.png 2x
+                " type="image/png" />
+              <source media="(min-width: 768px)" srcset="
+                  ./images/favorites/Pasta@1x_md.webp 1x,
+                  ./images/favorites/Pasta@2x_md.webp 2x
+                " type="image/webp" />
+              <!--Mobile-->
+              <source media="(max-width: 767px)" srcset="
+                  ./images/favorites/Pasta@1x_sm.png 1x,
+                  ./images/favorites/Pasta@2x_sm.png 2x
+                " type="image/png" />
+              <source media="(max-width: 767px)" srcset="
+                  ./images/favorites/Pasta@1x_sm.webp 1x,
+                  ./images/favorites/Pasta@2x_sm.webp 2x
+                " type="image/webp" />
+                <!--fallback-->
+                <img src="./images/favorites/Pasta@1x_lg.png" alt="Pasta" />
+              </picture>
             </a>
           </li>
           <li class="favorites__item">
-            <a class="favorites__link link" href=""
-              ><div class="favorites__thumb">
-                <img
-                  class="favorites__img"
+            <a href="" class="favorites__link">
+              <picture class="favorites__img">
+                <!--Desktop-->
+                <source
+                  media="(min-width: 1280px)"
                   srcset="
-                    images/favorites/chicken@1x-224.png 224w,
-                    images/favorites/chicken@1x-268.png 268w,
-                    images/favorites/chicken@1x-315.png 315w,
-                    images/favorites/chicken@2x-448.png 448w,
-                    images/favorites/chicken@2x-536.png 536w,
-                    images/favorites/chicken@2x-630.png 630w
+                    ./images/favorites/pizza@1x_lg.png 1x,
+                    ./images/favorites/pizza@2x_lg.png 2x
                   "
-                  sizes="(min-width: 1280px) 315px, (min-width: 768px) 268px, (max-width: 767px) 224px"
-                  src="images/favorites/chicken@1x-315.png"
-                  alt="chicken"
-                  width="315"
-                  height="315"
-                /></div
-            ></a>
-          </li>
-          <li class="favorites__item">
-            <a class="favorites__link link" href=""
-              ><div class="favorites__thumb">
-                <img
-                  class="favorites__img"
-                  srcset="
-                    images/favorites/salat@1x-224.png 224w,
-                    images/favorites/salat@1x-268.png 268w,
-                    images/favorites/salat@1x-315.png 315w,
-                    images/favorites/salat@2x-448.png 448w,
-                    images/favorites/salat@2x-536.png 536w,
-                    images/favorites/salat@2x-630.png 630w
-                  "
-                  sizes="(min-width: 1280px) 315px, (min-width: 768px) 268px, (max-width: 767px) 224px"
-                  src="images/favorites/salat@1x-315.png"
-                  alt="salat"
-                  width="315"
-                  height="315"
+                  type="image/png"
                 />
-              </div>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/favorites/pizza@1x_lg.webp 1x,
+                    ./images/favorites/pizza@2x_lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <!--Tablet-->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/favorites/pizza@1x_md.png 1x,
+                    ./images/favorites/pizza@2x_md.png 2x
+                  "
+                  type="image/png"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/favorites/pizza@1x_md.webp 1x,
+                    ./images/favorites/pizza@2x_md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <!--Mobile-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/favorites/pizza@1x_sm.png 1x,
+                    ./images/favorites/pizza@2x_sm.png 2x
+                  "
+                  type="image/png"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/favorites/pizza@1x_sm.webp 1x,
+                    ./images/favorites/pizza@2x_sm.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <!--fallback-->
+                <img src="./images/favorites/pizza@1x_sm.png" alt="pizza" />
+              </picture>
             </a>
           </li>
-          <li class="favorites__item">
-            <a class="favorites__link link" href=""
-              ><div class="favorites__thumb">
-                <img
-                  class="favorites__img"
+          <li class="favorites_item favorites_item--mobile">
+            <a href="" class="favorites__link">
+              <picture class="favorites__img">
+                <!--Desktop-->
+                <source
+                  media="(min-width: 1280px)"
                   srcset="
-                    images/favorites/borshch@1x-224.png 224w,
-                    images/favorites/borshch@1x-268.png 268w,
-                    images/favorites/borshch@1x-315.png 315w,
-                    images/favorites/borshch@2x-448.png 448w,
-                    images/favorites/borshch@2x-536.png 536w,
-                    images/favorites/borshch@2x-630.png 630w
+                    ./images/favorites/chicken@1x_lg.png 1x,
+                    ./images/favorites/chicken@2x_lg.png 2x
                   "
-                  sizes="(min-width: 1280px) 315px, (min-width: 768px) 268px, (max-width: 767px) 224px"
-                  src="images/favorites/borshch@1x-315.png"
-                  alt="borshch"
-                  width="315"
-                  height="315"
-                /></div
-            ></a>
+                  type="image/png"
+                />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/favorites/chicken@1x_lg.webp 1x,
+                    ./images/favorites/chicken@2x_lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <!--Tablet-->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/favorites/chicken@1x_md.png 1x,
+                    ./images/favorites/chicken@2x_md.png 2x
+                  "
+                  type="image/png"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/favorites/chicken@1x_md.webp 1x,
+                    ./images/favorites/chicken@2x_md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <!--fallback-->
+                <img src="./images/favorites/img-4@1x_md.png" alt="chicken" />
+              </picture>
+            </a>
+          </li>
+          <li class="favorites_item favorites_item--mobile">
+            <a href="" class="favorites__link">
+              <picture class="favorites__img">
+                <!--Desktop-->
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/favorites/salat@1x_lg.png 1x,
+                    ./images/favorites/salat@2x_lg.png 2x
+                  "
+                  type="image/png"
+                />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/favorites/salat@1x_lg.webp 1x,
+                    ./images/favorites/salat@2x_lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <!--Tablet-->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/favorites/salat@1x_md.png 1x,
+                    ./images/favorites/salat@2x_md.png 2x
+                  "
+                  type="image/png"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/favorites/salat@1x_md.webp 1x,
+                    ./images/favorites/salat@2x_md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <!--fallback-->
+                <img src="./images/favorites/img-5@1x_md.png" alt="salat" />
+              </picture>
+            </a>
+          </li>
+          <li class="favorites_item favorites_item--mobile">
+            <a href="" class="favorites__link">
+              <picture class="favorites__img">
+                <!--Desktop-->
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/favorites/borshch@1x_lg.png 1x,
+                    ./images/favorites/borshch@2x_lg.png 2x
+                  "
+                  type="image/png"
+                />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/favorites/borshch@1x_lg.webp 1x,
+                    ./images/favorites/borshch@2x_lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <!--Tablet-->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/favorites/borshch@1x_md.png 1x,
+                    ./images/favorites/borshch@2x_md.png 2x
+                  "
+                  type="image/png"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/favorites/borshch@1x_md.webp 1x,
+                    ./images/favorites/borshch@2x_md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <!--fallback-->
+                <img src="./images/favorites/img-6@1x_md.png" alt="borshch" />
+              </picture>
+            </a>
           </li>
         </ul>
       </div>
