@@ -156,6 +156,10 @@
   cursor: pointer;
 }
 .content__btn--right {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // gap: 3.5px;
   @media screen and (min-width: 1280px) {
     display: none;
   }
@@ -170,7 +174,7 @@
   border: none;
   background-color: inherit;
 
-  &::after {
-    content: '';
-  }
+  // &::after {
+  //   content: '';
+  // }
 }
