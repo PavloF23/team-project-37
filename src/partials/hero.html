@@ -5,13 +5,17 @@
         <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
         <button class="hero__btn button" type="button" data-modal-open>Order Now</button>
     </div>
-    <div class="slider">
-        <button type="button" class="slider__btn"><img src="./images/slider_left.svg" alt="left" class="hero__btn-icon"></button>
-        <ul class="slider__list">
-            <li class="slider__item"><img class="slider__img" src="./images/dish/dish1_528.png" alt="meatball"></li>
-            <li class="slider__item"><img class="slider__img" src="./images/dish/dish2_528.png" alt="salat"></li>
-            <li class="slider__item"><img class="slider__img" src="./images/dish/dish3_528.png" alt="egg"></li>
-        </ul>
-        <button type="button" class="slider__btn"><img src="./images/slider_right.svg" alt="left" class="hero__btn-icon"></button>
+    <div class="swiper">
+        <div class="swiper__list">
+        <div class="swiper-wrapper">
+            <img class="swiper-slide" src="./images/dish/dish1_528.png" alt="meatball">
+            <img class="swiper-slide" src="./images/dish/dish2_528.png" alt="salat">
+            <img class="swiper-slide" src="./images/dish/dish3_528.png" alt="egg">
+        </div>
+        </div>    
+       <div class="swiper-pagination"></div>
+
+        <div class="s"><button class="slider-btn swiper-button-prev">left</button></div>
+        <div class="s"><button class="slider-btn swiper-button-next">right</button></div>
     </div>
 </section>
