@@ -1,10 +1,19 @@
 // header
+.header {
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    background-color: $primary-bg-color;
+}
+
 .header__body {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .logo {
+    z-index: 4;
     margin-top: 10px;
 }
 
