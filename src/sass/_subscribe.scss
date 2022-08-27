@@ -19,22 +19,26 @@
     display: flex;
     flex-direction: column;
     // align-items: center;
-} 
-@media screen and (max-width:767px) {
-    .subscribe-section__container:first-child {
-    align-items: center;
-    }
 }
+
 @media screen and (min-width:768px) {
     .subscribe-section__container {
         align-items: flex-start;
     }
 }
+
+@media screen and (max-width:767px) {
+    .subscribe-section__picture {
+        text-align: center;
+    }
+}
+
 @media screen and (min-width:768px) {
     .subscribe-section__picture {
         margin-left: 455px;
     }
 }
+
 .subscribe-section__header {
     display: block;
     text-align: start;
@@ -48,12 +52,14 @@
 
     color: $primary-text-color;
 }
+
 @media screen and (min-width:768px) {
     .subscribe-section__header {
-    font-size: 42px;
-    width: 656px;
+        font-size: 42px;
+        width: 656px;
+    }
 }
-}
+
 .subscribe-section__text {
     display: block;
     text-align: start;
@@ -61,11 +67,12 @@
     font-weight: 400;
     font-size: 14px;
     line-height: calc(16 / 14);
-    
-    
+
+
     color: $primary-text-color;
     width: 280px;
 }
+
 @media screen and (min-width:768px) {
     .subscribe-section__text {
         font-size: 16px;
@@ -73,6 +80,7 @@
         width: 656px;
     }
 }
+
 @media screen and (min-width:1280px) {
     .subscribe-section__text {
         font-size: 16px;
@@ -80,17 +88,19 @@
         width: 656px;
     }
 }
+
 .subscribe-section__input {
-margin-top: 40px;
-width: 279px;
-height: 42px;
-left: -1px;
-top: 0px;
+    margin-top: 40px;
+    width: 279px;
+    height: 42px;
+    left: -1px;
+    top: 0px;
 
-background: #FFFFFF;
+    background: #FFFFFF;
 
-border: 0.854167px solid #FFE550;
-border-radius: 30px;
+    border: 0.854167px solid #FFE550;
+    border-radius: 30px;
+
     &:hover,
     &:focus {
         background: #FFE550;
@@ -98,11 +108,13 @@ border-radius: 30px;
     }
 
 }
+
 @media screen and (min-width:768px) {
     .subscribe-section__input {
         width: 395px;
     }
 }
+
 .subscribe-section__input::placeholder {
     font-family: $main-fonts;
     font-style: normal;
@@ -115,13 +127,14 @@ border-radius: 30px;
     padding-bottom: 12px;
     padding-left: 12px;
 }
+
 .subscribe-section__btn {
     width: 103px;
     height: 42px;
     left: 197px;
     top: 3734px;
-    
-    
+
+
     background: $primary-btn-color;
     border-radius: 30px;
     border: none;
@@ -135,11 +148,11 @@ border-radius: 30px;
     line-height: 150%;
 
     color: $primary-text-color;
-       
+    margin-left: 180px;
+    margin-top: 20px;
+
 }
-.subscribe-section__container {
-    position: relative;
-}
+
 @media screen and (min-width:768px) {
     .subscribe-section__btn {
         margin-left: 22px;
@@ -151,12 +164,18 @@ border-radius: 30px;
         margin-left: 32px;
     }
 }
-.subscribe-section__form .subscribe-section__btn {
+
+.subscribe-section__form {
 
     @media screen and (max-width: 767px) {
-        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+}
 
-        right: 20px;
-        bottom: 0;
+.subscribe-section__form {
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
     }
 }
