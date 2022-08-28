@@ -64,14 +64,26 @@
   background-color: #fefefe;
   width: 256px;
   height: 256px;
+  background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    #2f583f -30%,
+    rgba(105, 105, 105, 0) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 128px 44px;
+  background-position: 65px 186px;
 
   @media screen and (min-width: 768px) {
     width: 326px;
     height: 326px;
+    background-size: 164px 57px;
+    background-position: 83px 233px;
   }
   @media screen and (min-width: 1280px) {
     width: 502px;
     height: 502px;
+    background-size: 252px 87px;
+    background-position: 127px 361px;
   }
 }
 .picture__image {
