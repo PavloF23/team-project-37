@@ -1,14 +1,4 @@
 // Costomers
-ul,
-h1,
-h2,
-h3,
-p {
-    font-size: 14;
-    margin: 0;
-    padding: 0;
-}
-
 .section__customers {
 
     margin-left: auto;
@@ -18,11 +8,14 @@ p {
    
     @media screen and (max-width: 767px) {   
         background-image: url('../images/cliant/bg@1x_sm.png');
+        background-position-y: bottom;
         padding-top: 60px;
         padding-bottom: 60px;}
-    @media screen and (min-width: 768px) {
+   
+        @media screen and (min-width: 768px) {
         background-image:
         url('..//images/cliant/bg@1x_md.png');
+        background-position-y: bottom;
         padding-top: 60px;
         padding-bottom: 120px;
     }
