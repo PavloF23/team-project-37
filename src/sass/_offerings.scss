@@ -13,7 +13,7 @@
       url(../images/about/Apple-108.png), url(../images/bg/bgimg-t.png);
     background-repeat: no-repeat;
     background-size: 166px, 108px, 100% 100%;
-    background-position: top 280px right 184px, top 340px right 32px, center;
+    background-position: top 270px right 184px, top 345px right 32px, center;
   }
   @media screen and (min-width: 1280px) {
     display: flex;
@@ -27,7 +27,7 @@
   }
 }
 .picture {
-  margin-top: 70px;
+  margin-top: 41px;
   margin-bottom: 60px;
   display: flex;
   align-items: center;
@@ -64,14 +64,26 @@
   background-color: #fefefe;
   width: 256px;
   height: 256px;
+  background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    #2f583f -30%,
+    rgba(105, 105, 105, 0) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 128px 44px;
+  background-position: 65px 186px;
 
   @media screen and (min-width: 768px) {
     width: 326px;
     height: 326px;
+    background-size: 164px 57px;
+    background-position: 83px 233px;
   }
   @media screen and (min-width: 1280px) {
     width: 502px;
     height: 502px;
+    background-size: 252px 87px;
+    background-position: 127px 361px;
   }
 }
 .picture__image {
@@ -103,23 +115,27 @@
 .content__main-title {
   margin-bottom: 28px;
   font-weight: 700;
-  font-size: 42px;
-  line-height: 120%;
+  font-size: 28px;
+  line-height: calc(33 / 28);
   color: #2c2c2c;
   @media screen and (min-width: 768px) {
     margin-bottom: 20px;
     max-width: 526px;
+    font-size: 42px;
+    line-height: calc(49 / 42);
   }
 }
 .content__main-subtitle {
   margin-bottom: 28px;
-  font-size: 16px;
-  line-height: 150%;
+  font-size: 14px;
+  line-height: calc(16 / 14);
   color: #2c2c2c;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
     max-width: 526px;
+    font-size: 16px;
+    line-height: calc(19 / 16);
   }
 }
 .content__list {
@@ -173,13 +189,13 @@
 .content__title {
   margin-bottom: 16px;
   font-weight: 700;
-  font-size: 17.1px;
-  line-height: 140%;
+  font-size: 18px;
+  line-height: calc(21 / 18);
   color: #2c2c2c;
 }
 .content__subtitle {
   font-size: 14px;
-  line-height: 150%;
+  line-height: calc(16 / 14);
   color: #2c2c2c;
 }
 .content__btn {
@@ -192,8 +208,8 @@
 
   width: 106px;
   height: 40px;
-  left: 656px;
-  top: 1204px;
+  left: 20px;
+  top: 1391px;
   background: #ffffff;
   border: 2px solid #7eb101;
   border-radius: 30px;
