@@ -4,13 +4,15 @@
 .carousel {
     padding: 0 50px;
     margin: 0;
-    width: 600px;
+    width: 630px;
     height: 580px;
+    border: 5px solid green;
 
     &__img {
         max-height: 528px;
+        // max-width: 528px;
         margin: 0 auto;
-
+        border: 5px solid green;
     }
 }
 
@@ -42,8 +44,6 @@
     left: 0;
     &::before            {
         content: url('../images/slider-left.svg');
-        fill: yellow;
-
     }
 }
 
@@ -51,6 +51,5 @@
     right: 0;   
     &::before {
         content: url('../images/slider-right.svg');
-        fill: yellow;
     }
 }
