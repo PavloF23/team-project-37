@@ -1,1 +1,85 @@
 // Footer
+
+.footer__hade {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.footer__logo-link {
+    margin-left: 24px;
+}
+
+.footer__nav {
+    margin-right: 105px;
+}
+
+.footer__nav-item {
+    padding-bottom: 20px;
+}
+
+.footer__title {
+    margin-top: 40px;
+}
+
+.footer__form {
+    margin-top: 12px;
+
+}
+
+.footer__input {
+    width: 279px;
+    height: 42px;
+    left: -1px;
+    top: 0px;
+
+    background: $primary-bg-color;
+
+    border: 0.854167px solid $secondary-bg-color;
+    border-radius: 30px;
+
+    &:hover,
+    &:focus {
+        background: $secondary-bg-color;
+        border: 0.854167px solid $accent-menu-color;
+    }
+
+}
+
+.footer__btn {
+    margin-top: 28px;
+    margin-right: 24px;
+    @media screen and (min-width: 768px) {
+      margin-top: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-top: 32px;
+    }
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    color: $primary-text-color;
+  
+    width: 106px;
+    height: 40px;
+    left: 656px;
+    top: 1204px;
+    background: $primary-bg-color;
+    border: 2px solid $accent-menu-color;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+.footer__more {
+    margin-top: 20px;
+
+}
+
+.footer__list {
+    margin-top: 60px;
+}
+
+.footer__text {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
