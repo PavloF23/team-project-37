@@ -1,0 +1,56 @@
+@import "../../../node_modules/slick-carousel/slick/slick.scss";
+
+
+.carousel {
+    padding: 0 50px;
+    margin: 0;
+    width: 600px;
+    height: 580px;
+
+    &__img {
+        max-height: 528px;
+        margin: 0 auto;
+
+    }
+}
+
+// стрелки
+
+.slick-arrow {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+
+    border: 0;
+    border-radius: 8px;
+    background-color: $primary-bg-color;
+    padding: 6 19;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+
+    font-size: 0;
+
+    &::before{
+        display: table;
+    }
+    &:hover, &:focus {
+        opacity: 0.8;
+    }
+}
+
+.slick-prev {
+    left: 0;
+    &::before            {
+        content: url('../images/slider-left.svg');
+        fill: yellow;
+
+    }
+}
+
+.slick-next {
+    right: 0;   
+    &::before {
+        content: url('../images/slider-right.svg');
+        fill: yellow;
+    }
+}
