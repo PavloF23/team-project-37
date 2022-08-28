@@ -6,12 +6,14 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-top: 150px;
     padding-bottom: 100px;
-    background-image: url(../images/bg/bgimg-t.png);
+    background-image: url(../images/about/aple-166.png),
+      url(../images/about/Apple-108.png), url(../images/bg/bgimg-t.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 166px, 108px, 100% 100%;
+    background-position: top 280px right 184px, top 340px right 32px, center;
   }
   @media screen and (min-width: 1280px) {
     display: flex;
@@ -90,33 +92,35 @@
   }
 }
 .content {
+  @media screen and (min-width: 768px) {
+    flex-basis: 526px;
+  }
   @media screen and (min-width: 1280px) {
-    max-width: 573px;
+    flex-basis: 573px;
   }
 }
 
 .content__main-title {
   margin-bottom: 28px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 20px;
-    max-width: 526px;
-  }
   font-weight: 700;
   font-size: 42px;
   line-height: 120%;
   color: #2c2c2c;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+    max-width: 526px;
+  }
 }
 .content__main-subtitle {
   margin-bottom: 28px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2c2c2c;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
     max-width: 526px;
   }
-
-  font-size: 16px;
-  line-height: 150%;
-  color: #2c2c2c;
 }
 .content__list {
   display: block;
@@ -181,12 +185,6 @@
 .content__btn {
   margin-top: 28px;
   margin-right: 24px;
-  @media screen and (min-width: 768px) {
-    margin-top: 40px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-top: 32px;
-  }
   font-weight: 500;
   font-size: 13px;
   line-height: 150%;
@@ -200,27 +198,34 @@
   border: 2px solid #7eb101;
   border-radius: 30px;
   cursor: pointer;
+
+  transform: $timing-function;
+
+  &:hover,
+  :focus {
+    border: 2px solid #597d00;
+    border-radius: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 32px;
+  }
 }
 .content__btn--right {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // gap: 3.5px;
-  @media screen and (min-width: 1280px) {
-    display: none;
-  }
   font-size: 13.7px;
   line-height: 150%;
-
   color: #000000;
-
   flex: none;
   order: 0;
   flex-grow: 0;
   border: none;
   background-color: inherit;
+  cursor: pointer;
 
-  // &::after {
-  //   content: '';
-  // }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
