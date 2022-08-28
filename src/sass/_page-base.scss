@@ -16,6 +16,16 @@ a {
   text-decoration: none;
 }
 
+ul,
+h1,
+h2,
+h3,
+p {
+    font-size: 14;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
   padding-left: 20px;
   padding-right: 20px;
