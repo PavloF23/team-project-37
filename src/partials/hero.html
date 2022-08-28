@@ -6,16 +6,29 @@
         <button class="hero__btn button" type="button" data-modal-open>Order Now</button>
     </div>
     <div class="swiper">
-        <div class="swiper__list">
-        <div class="swiper-wrapper">
-            <img class="swiper-slide" src="./images/dish/dish1_528.png" alt="meatball">
-            <img class="swiper-slide" src="./images/dish/dish2_528.png" alt="salat">
-            <img class="swiper-slide" src="./images/dish/dish3_528.png" alt="egg">
-        </div>
+        <div class="swiper__list swiper-wrapper">
+            <div class="swiper__item swiper-slide">
+                <img class="swiper-slide" src="./images/dish/dish1_528.png" alt="meatball">
+            </div>  
+            <div class="swiper__item">
+                <img class="swiper-slide" src="./images/dish/dish2_528.png" alt="salat">
+            </div>    
+                <div class="swiper__item">
+                    <img class="swiper-slide" src="./images/dish/dish3_528.png" alt="egg">
+                </div>     
+            </div>
         </div>    
-       <div class="swiper-pagination"></div>
-
-        <div class="s"><button class="slider-btn swiper-button-prev">left</button></div>
-        <div class="s"><button class="slider-btn swiper-button-next">right</button></div>
+        <div class="news-slider__arrows">
+            <button class="news-slider__arrow news-slider-prev">
+              <span class="icon-font">
+                <svg class="icon icon-arrow-left"><use href="./images/sprite.svg#slider_left"></use></svg>
+              </span>
+            </button>
+            <button class="news-slider__arrow news-slider-next">
+              <span class="icon-font">
+                <svg class="icon icon-arrow-right"><use href="./images/sprite.svg#slider_right"></use></svg>
+              </span>
+            </button>
+          </div>
     </div>
 </section>
