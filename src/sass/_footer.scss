@@ -2,16 +2,38 @@
 
 .footer__hade {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     margin-top: 60px;
+    gap: 83px;
+}
+@media screen and (min-width: 768px) {
+    .footer__hade {
+        gap: 116px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footer__hade {
+        gap: 147px;
+    }
 }
 
 // .footer__logo-link {
 //     margin-left: 24px;
 // }
 
-.footer__nav {
-    margin-right: 105px;
+// .footer__nav {
+//     // margin-right: 105px;
+// }
+.footer__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media screen and (min-width: 768px) {
+    .footer__nav-list {
+        flex-direction: row;
+    }
 }
 
 .footer__nav-item {
@@ -21,7 +43,7 @@
 .footer__nav-link{
     font-weight: 400;
     font-size: 14px;
-    line-height: 16px;
+    line-height: calc(16 / 14);
 
     color: $secondary-text-color;
 
@@ -54,7 +76,12 @@
     -ms-flex-align: center;
     align-items: center;
 }
-
+@media screen and (min-width: 768px) {
+    .footer__form {
+        flex-direction: row;
+        gap: 13px;
+    }
+}
 .footer__input {
     width: 279px;
     height: 42px;
@@ -76,26 +103,38 @@
     }
 
 }
+.footer__input::placeholder {
+    font-family: $main-fonts;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #505050;;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+}
 
 .footer__btn {
-    margin-top: 28px;
+    // margin-top: 28px;
     margin-left: auto;
 
-    @media screen and (min-width: 768px) {
-      margin-top: 40px;
-    }
+    // @media screen and (min-width: 768px) {
+    //   margin-top: 40px;
+    // }
 
-    @media screen and (min-width: 1280px) {
-      margin-top: 32px;
-    }
+    // @media screen and (min-width: 1280px) {
+    //   margin-top: 32px;
+    // }
 
     font-weight: 500;
     font-size: 13px;
     line-height: 150%;
     color: $primary-text-color;
   
-    width: 106px;
-    height: 40px;
+    width: 103px;
+    height: 42px;
     left: 656px;
     top: 1204px;
     background: $primary-bg-color;
@@ -103,17 +142,118 @@
     border-radius: 30px;
     cursor: pointer;
   }
-
+@media screen and (max-width: 767px) {
+    .footer__btn {
+        margin-top: 28px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .footer__btn {
+        width: 103px;
+        height: 42px;
+        left: 656px;
+        top: 1204px;
+    }
+}
 .footer__more {
     margin-top: 20px;
 
-}
+    font-family: $main-fonts;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: calc(12 / 10);
+    color: $primary-text-color;
 
+}
+@media screen and (min-width: 768px) {
+    .footer__more {
+        font-size: 12px;
+    }
+}
+.footer__more-link {
+    font-family: $main-fonts;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: calc(12 / 10);
+    color: $accent-menu-color;
+    text-decoration-line: underline;
+}
+@media screen and (min-width: 768px) {
+    .footer__more-link {
+        font-size: 12px;
+    }
+}
 .footer__list {
+    display: flex;
+    gap: 32px;
     margin-top: 60px;
 }
-
+@media screen and (min-width: 768px) {
+    .footer__list {
+        margin-top: 100px;
+        gap: 20px;
+    }
+}
 .footer__text {
     margin-top: 40px;
     margin-bottom: 60px;
+
+    font-family: $main-fonts;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: calc(12 / 10);
+    
+    color: $primary-text-color;
+}
+@media screen and (min-width: 768px) {
+    .footer__text {
+        font-size: 12px;
+        margin-top: 100px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .footer__text {
+        margin-top: 100px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .footer__section {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.footer__ro-link {
+    font-family: $main-fonts;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: calc(12 / 10);
+    
+    text-decoration-line: underline;
+   
+    color: $accent-menu-color;
+}
+@media screen and (min-width: 768px) {
+    .footer__ro-link {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .footer__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 768px) {
+    .footer__wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
 }
