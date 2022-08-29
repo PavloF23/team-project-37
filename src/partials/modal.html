@@ -1,40 +1,54 @@
- <!-- modal  -->
- <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <button class="modal__btn" data-modal-close>
-        <span hidden>close</span>
-        <svg class="modal__icon">
-          <use href="./images/sprite.svg#cross"></use>
-        </svg>
-      </button>
-      <form class="form js-speaker-form">
-        <h2 class="form__title">
-          Order form
-        </h2>
-        <label class="form__field" for="name">
-          <span class="form__label">Name</span>
-          <input class="form__input" type="text" name="name" id="name" />
-          <!-- <svg class="form__icon">
+<!-- modal  -->
+<div class="backdrop" data-modal>
+  <div class="modal">
+    <button class="modal__btn" data-modal-close>
+      <span hidden>close</span>
+      <svg class="modal__icon" width="24" height="24">
+        <use href="./images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <form class="form js-speaker-form">
+      <h2 class="form__title">Order Form</h2>
+      <label class="form__field">
+        <span class="form__label">Name</span>
+        <input
+          class="form__input"
+          type="text"
+          name="name"
+          placeholder="Your name"
+          required
+        />
+        <!-- <svg class="form__icon">
             <use href="./images/sprite.svg#icon-person-modal"></use>
           </svg> -->
-        </label>
-        <label class="form__field" for="tel">
-          <span class="form__label">Tel.</span>
-          <input class="form__input" type="tel" name="tel" id="tel" />
-          <!-- <svg class="form__icon">
+      </label>
+      <label class="form__field">
+        <span class="form__label">Phone number</span>
+        <input
+          class="form__input"
+          type="tel"
+          name="tel"
+          placeholder="+38(0__)___ __ __"
+          required
+        />
+        <!-- <svg class="form__icon">
             <use href="./images/sprite.svg#icon-phone-modal"></use>
           </svg> -->
-        </label>
-        <label class="form__field" for="address">
-          <span class="form__label">Address</span>
-          <input class="form__input" type="text" name="address" id="address" />
-          <!-- <svg class="form__icon">
+      </label>
+      <label class="form__field">
+        <span class="form__label">E-mail</span>
+        <input
+          class="form__input"
+          type="email"
+          name="address"
+          placeholder="example@gmail.com"
+          required
+        />
+        <!-- <svg class="form__icon">
             <use href="./images/sprite.svg#icon-phone-modal"></use>
           </svg> -->
-        </label>
-        <button class="button form__button" type="submit">
-        submit
-        </button>
-      </form>
-    </div>
+      </label>
+      <button class="button form__button" type="submit">Send</button>
+    </form>
+  </div>
 </div>
