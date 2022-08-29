@@ -29,7 +29,7 @@
   left: 50%;
   z-index: 1000;
   padding: 32px 20px;
-  width: 320px;
+  width: 400px;
   height: 449px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 30px;
@@ -80,21 +80,21 @@
   font-size: 24px;
   line-height: calc(28 / 24);
   color: $primary-text-color;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   color: $primary-text-color;
 }
 
 .form__field {
+  position: relative;
   display: block;
   margin-bottom: 24px;
   text-align: start;
   font-size: 16px;
   line-height: calc(20 / 16);
-  color: rgba(196, 196, 196, 0.2);
 
   &:last-child {
-    margin-bottom: 32px;
+    margin-bottom: 0px;
   }
 }
 
@@ -124,19 +124,42 @@
   outline: none;
   color: $primary-text-color;
 
+  &::placeholder {
+    color: rgba(196, 196, 196, 1);
+  }
+
   &:hover,
   &:focus {
     border: 1px solid $accent-menu-color;
   }
-
-  //   &:focus-within > .form__icon {
-  //     fill: $accent-btn-cl;
-  //   }
-  //   & input::placeholder {
-  //     color: $secondary-bg-color;
-  //   }
 }
-
+.form__icon {
+  position: absolute;
+  left: 12px;
+  top: 71px;
+}
+.form__warning {
+  opacity: 0;
+}
+.form__input:invalid:required:not(:placeholder-shown)
+  ~ .form__icon
+  .form__warning {
+  opacity: 1;
+}
+.form__notfication {
+  display: flex;
+  position: absolute;
+  left: 30px;
+  top: 70px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: calc(15 / 13);
+  color: #ff705d;
+  opacity: 0;
+}
+.form__input:invalid:required:not(:placeholder-shown) ~ .form__notfication {
+  opacity: 1;
+}
 .form__button {
   padding: 10px 32px;
   border: 2px solid #7eb101;
