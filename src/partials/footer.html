@@ -23,7 +23,17 @@
                 </div>
                 <div class="footer__form">
                     <label class="footer__label">
-                        <input type="email" class="footer__input" placeholder="Enter your email">
+                        <input 
+                        type="email" 
+                        class="footer__input form__input" 
+                        name="address" 
+                        placeholder="Enter your email" 
+                        required
+                        id="mail"/>
+                        <svg class="form__icon" width="12" height="12">
+                            <use class="form__warning" href="./images/sprite.svg#warning"></use>
+                          </svg>
+                          <span class="form__notfication">Please enter a valid email address</span>
                     </label>
                     <button type="submit" class="footer__btn">Subscribe</button>
                 </div>
