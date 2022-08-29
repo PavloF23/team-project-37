@@ -27,9 +27,15 @@
             in eros elementum tristique.</p>
         <form class="subscribe-section__form">
             <label class="subscribe-section__wrap">
-                <input type="text" class="subscribe-section__input" placeholder="Enter your email">
+                <input class="subscribe-section__input" type="email"
+                name="address" placeholder="Enter your email" required
+                id="mail"/>
+                <svg class="form__icon" width="12" height="12">
+                    <use class="form__warning" href="./images/sprite.svg#warning"></use>
+                  </svg>
+                  <span class="form__notfication">Please enter a valid email address</span>
             </label>
-            <button class="subscribe-section__btn" type="button">Subscribe</button>
+            <button class="subscribe-section__btn" type="submit">Subscribe</button>
         </form>
     </div>
 

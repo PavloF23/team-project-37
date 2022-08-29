@@ -19,6 +19,7 @@
           required
           minlength="3"
           maxlength="25"
+          id="name"
         />
         <svg class="form__icon" width="12" height="12">
           <use class="form__warning" href="./images/sprite.svg#warning"></use>
@@ -37,6 +38,7 @@
           required
           minlength="10"
           maxlength="12"
+          id="tel"
         />
         <svg class="form__icon" width="12" height="12">
           <use class="form__warning" href="./images/sprite.svg#warning"></use>
@@ -53,6 +55,7 @@
           name="address"
           placeholder="example@gmail.com"
           required
+          id="mail"
         />
         <svg class="form__icon" width="12" height="12">
           <use class="form__warning" href="./images/sprite.svg#warning"></use>
@@ -61,7 +64,8 @@
           >Please enter a valid email address</span
         >
       </label>
-      <button class="button form__button" type="submit">Send</button>
+      <div class="span" id="span"></div>
+      <button class="button form__button vali" type="submit">Send</button>
     </form>
   </div>
 </div>
