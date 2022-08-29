@@ -1,6 +1,15 @@
 // Hero
 .hero {
+    position: relative;
     margin-top: 60px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: -40px;
+    }
 
     @media screen and (min-width: 1280px) {
     display: flex;
@@ -8,11 +17,11 @@
 
 }
 
-.hero__box {
-    @media screen and (min-width: 1280px) {
+// .hero__box {
+//     @media screen and (min-width: 1280px) {
     
-    }
-}
+//     }
+// }
 
 .hero__title {
     font-weight: 700;
@@ -59,6 +68,16 @@
     @media screen and (min-width: 768px) {
          margin-top: 40px;
     }
+}
+.galery {
+    position: absolute;
+    top: 75px;
+    right: 0px; 
+    @media screen and (min-width: 1280px){
+        top: 0px;
+        right: 80px; 
+    }
+
 }
 
 .swiper {
