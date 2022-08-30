@@ -27,6 +27,7 @@
   }
   }
 .footer__body {
+  margin-bottom: 100px;
   @media screen and (min-width: 1280px) {
     display: flex;
     align-items: flex-start;
@@ -240,7 +241,7 @@
 
 .footer-aside {
   display: block;
-  margin-top: 94px;
+  
 
   @media screen and (min-width: 768px) {
     display: flex;
