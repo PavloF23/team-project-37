@@ -20,14 +20,14 @@
     align-items: center;
     justify-content: center;
     padding-top: 177px;
-    padding-bottom: 75px;
+    padding-bottom: 43px;
     background-image: url(../images/bg/bgimg-d.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 }
 .picture {
-  margin-top: 41px;
+  padding-top: 41px;
   margin-bottom: 60px;
   display: flex;
   align-items: center;
@@ -38,6 +38,7 @@
   }
   @media screen and (min-width: 1280px) {
     margin-right: 90px;
+    margin-bottom: 0;
   }
 }
 .picture__border {
