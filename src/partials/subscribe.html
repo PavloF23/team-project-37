@@ -1,8 +1,8 @@
 <!-- Subscribe section -->
-<section class="subscribe container">
-    <div class="subscribe-section__container">
-
+<section class="subscribe container" id="contact">
+  <div class="subscribe-section__container">
     <div class="subscribe-section__picture">
+
         <picture>
             <!-- desktop -->
             <source media="(min-width: 1280px)" srcset=" ./images/subscribe/banan_lg@1x.png 1x,
@@ -17,28 +17,55 @@
 
             <img src="./images/subscribe/banan_lg@1x.png" alt="Banan" class="subscribe-section__img">
 
-        </picture>
+
+        <img
+          src="./images\subscribe\bananM@1x.png"
+          alt="Banan"
+          class="subscribe-section__img"
+        />
+      </picture>
     </div>
 
     <div class="subscribe-section__div">
-        <h1 class="subscribe-section__header">Subscribe To Get Special Offers</h1>
-        <p class="subscribe-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-            enim
-            in eros elementum tristique.</p>
-        <form class="subscribe-section__form">
-            <label class="subscribe-section__wrap">
-                <input class="subscribe-section__input" type="email"
-                name="address" placeholder="Enter your email" required
-                id="mail"/>
-                <svg class="form__icon" width="12" height="12">
-                    <use class="form__warning" href="./images/sprite.svg#warning"></use>
-                  </svg>
-                  <span class="form__notfication">Please enter a valid email address</span>
-            </label>
-            <button class="subscribe-section__btn" type="submit">Subscribe</button>
-        </form>
-    </div>
 
-    </div>
+      <h2 class="subscribe-section__header">Subscribe To Get Special Offers</h2>
+      <p class="subscribe-section__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique.
+      </p>
+      <form
+        class="subscribe-section__form"
+        name="signup_form"
+        autocomplete="on"
+      >
+        <label class="subscribe-section__wrap">
+          <input
+            type="email"
+            name="email"
+            class="subscribe-section__input"
+            placeholder="Enter your email"
+            required
+          />
 
+
+          <span class="alert subscribe-alert--error">
+            <svg class="subscribe-section__icon" width="16" height="16">
+              <use href="./images/sprite.svg#icon-alert-subscribe"></use>
+            </svg>
+            Not a valid email address (example@email.com)
+          </span>
+        </label>
+
+        <!-- <form class="subscribe-section__form">
+        <label class="subscribe-section__wrap">
+          <input
+            type="text"
+            class="subscribe-section__input"
+            placeholder="Enter your email"
+          />
+        </label> -->
+        <button class="subscribe-section__btn" type="button">Subscribe</button>
+      </form>
+    </div>
+  </div>
 </section>

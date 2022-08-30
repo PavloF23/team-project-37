@@ -1,60 +1,87 @@
- <!-- Footer section -->
- <footer class="footer container" id="contact">
-    <div class="footer__section">
-        <h2 hidden>Foter</h2>
-        <div class="footer__container">
-            <div class="footer__hade">
-                <a href="./index.html" class="footer__logo-link">
-                    <img src="./images/logo/logo.png" alt="logo FoodSta" class="header__logo-icon" width="72" height="52"/>
-                </a>
-                <nav class="footer__nav">
-                    <ul class="footer__nav-list list">
-                        <li class="footer__nav-item"><a href="#home" class="footer__nav-link">Home</a></li>
-                        <li class="footer__nav-item"><a href="#about" class="footer__nav-link">About</a></li>
-                        <li class="footer__nav-item"><a href="#service" class="footer__nav-link">Service</a></li>
-                        <li class="footer__nav-item"><a href="#menu" class="footer__nav-link">Menu</a></li>
-                        <li class="footer__nav-item"><a href="#contact" class="footer__nav-link">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="footer__div">
-                <div class="footer__more-box">
-                    <h3 class="footer__title">Subscribe</h3>
-                </div>
-                <div class="footer__form">
-                    <label class="footer__label">
-                        <input 
-                        type="email" 
-                        class="footer__input form__input" 
-                        name="address" 
-                        placeholder="Enter your email" 
-                        required
-                        id="mail"/>
-                        <svg class="form__icon" width="12" height="12">
-                            <use class="form__warning" href="./images/sprite.svg#warning"></use>
-                          </svg>
-                          <span class="form__notfication">Please enter a valid email address</span>
-                    </label>
-                    <button type="submit" class="footer__btn">Subscribe</button>
-                </div>
-                <div class="footer__more-box">
-                    <p class="footer__more">By subscribing you agree to with our 
-                        <a href="" class="footer__more-link">Privacy Policy</a>
-                    </p>
-                </div>
-            </div>
+
+<!-- Footer section -->
+<footer class="footer container" id="contact">
+  <div class="footer__section">
+    <h2 hidden>Foter</h2>
+    <div class="footer__container">
+      <div class="footer__hade">
+        <a href="./index.html" class="footer__logo-link">
+          <img
+            src="./images/logo/logo.png"
+            alt="logo FoodSta"
+            class="header__logo-icon"
+            width="72"
+            height="52"
+          />
+        </a>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list list">
+            <li class="footer__nav-item">
+              <a href="#home" class="footer__nav-link">Home</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#about" class="footer__nav-link">About</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#service" class="footer__nav-link">Service</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#menu" class="footer__nav-link">Menu</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#contact" class="footer__nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__div">
+        <div class="footer__more-box">
+          <h3 class="footer__title">Subscribe</h3>
+
         </div>
-        <div class="footer__wrap">
-            <div class="footer__policy">
-                <ul class="footer__list list">
-                    <li class="footer__item"><a href="" class="footer__ro-link">Privacy Policy</a></li>
-                    <li class="footer__item"><a href="" class="footer__ro-link">Terms of Service</a></li>
-                    <li class="footer__item"><a href="" class="footer__ro-link">Cookies Settings</a></li>
-                </ul>
-            </div>
-            <div class="footer-rights">
-                <p class="footer__text">2022 FoodSta. All right reserved.</p>
-            </div>
+        <div class="footer__form">
+          <label class="footer__label">
+            <input
+              type="email"
+              class="footer__input"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+            <span class="alert subscribe-alert--error">
+              <svg class="subscribe-section__icon" width="16" height="16">
+                <use href="./images/sprite.svg#icon-alert-subscribe"></use>
+              </svg>
+              Not a valid email address (example@email.com)
+            </span>
+          </label>
+          <button type="submit" class="footer__btn">Subscribe</button>
         </div>
+        <div class="footer__more-box">
+          <p class="footer__more">
+            By subscribing you agree to with our
+            <a href="" class="footer__more-link">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
     </div>
+    <div class="footer__wrap">
+      <div class="footer__policy">
+        <ul class="footer__list list">
+          <li class="footer__item">
+            <a href="" class="footer__ro-link">Privacy Policy</a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__ro-link">Terms of Service</a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__ro-link">Cookies Settings</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-rights">
+        <p class="footer__text">2022 FoodSta. All right reserved.</p>
+      </div>
+    </div>
+  </div>
 </footer>
