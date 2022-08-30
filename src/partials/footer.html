@@ -1,86 +1,82 @@
-
 <!-- Footer section -->
 <footer class="footer container" id="contact">
-  <div class="footer__section">
-    <h2 hidden>Foter</h2>
-    <div class="footer__container">
-      <div class="footer__hade">
-        <a href="./index.html" class="footer__logo-link">
+  <div class="footer__section section">
+    <div class="footer__body">
+      <div class="footer__page">
+        <a href="./index.html" class="footer__logo">
           <img
             src="./images/logo/logo.png"
             alt="logo FoodSta"
-            class="header__logo-icon"
+            class="logo-icon"
             width="72"
             height="52"
           />
         </a>
-        <nav class="footer__nav">
-          <ul class="footer__nav-list list">
-            <li class="footer__nav-item">
-              <a href="#home" class="footer__nav-link">Home</a>
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
             </li>
-            <li class="footer__nav-item">
-              <a href="#about" class="footer__nav-link">About</a>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
             </li>
-            <li class="footer__nav-item">
-              <a href="#service" class="footer__nav-link">Service</a>
+            <li class="nav__item">
+              <a href="#service" class="nav__link">Service</a>
             </li>
-            <li class="footer__nav-item">
-              <a href="#menu" class="footer__nav-link">Menu</a>
+            <li class="nav__item">
+              <a href="#menu" class="nav__link">Menu</a>
             </li>
-            <li class="footer__nav-item">
-              <a href="#contact" class="footer__nav-link">Contact</a>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
             </li>
           </ul>
         </nav>
       </div>
-      <div class="footer__div">
-        <div class="footer__more-box">
-          <h3 class="footer__title">Subscribe</h3>
-
-        </div>
-        <div class="footer__form">
-          <label class="footer__label">
+      <div class="footer__subscribe">
+        <h3 class="footer-form__title">Subscribe</h3>
+        <form class="footer__form">
+          <label class="footer__mail">
             <input
               type="email"
               class="footer__input"
-              name="email"
+              name="address"
               placeholder="Enter your email"
               required
             />
-            <span class="alert subscribe-alert--error">
-              <svg class="subscribe-section__icon" width="16" height="16">
-                <use href="./images/sprite.svg#icon-alert-subscribe"></use>
-              </svg>
-              Not a valid email address (example@email.com)
-            </span>
+            <svg class="footer__icon" width="12" height="12">
+              <use
+                class="footer__warning"
+                href="./images/sprite.svg#icon-alert-subscribe"
+              ></use>
+            </svg>
+            <span class="footer__notfication"
+              >Not a valid email address (example@email.com)</span
+            >
           </label>
           <button type="submit" class="footer__btn">Subscribe</button>
-        </div>
-        <div class="footer__more-box">
-          <p class="footer__more">
+          <span class="agreement">
             By subscribing you agree to with our
-            <a href="" class="footer__more-link">Privacy Policy</a>
-          </p>
-        </div>
+            <a class="agreement__link" href="">Privacy Policy</a>
+          </span>
+        </form>
       </div>
     </div>
-    <div class="footer__wrap">
-      <div class="footer__policy">
-        <ul class="footer__list list">
-          <li class="footer__item">
-            <a href="" class="footer__ro-link">Privacy Policy</a>
+    <div class="footer-aside">
+      <div class="footer-aside__wrap">
+        <ul class="footer-aside__list list">
+          <li class="footer-aside__item">
+            <a href="" class="footer-aside__link">Privacy Policy</a>
           </li>
-          <li class="footer__item">
-            <a href="" class="footer__ro-link">Terms of Service</a>
+          <li class="footer-aside__item">
+            <a href="" class="footer-aside__link">Terms of Service</a>
           </li>
-          <li class="footer__item">
-            <a href="" class="footer__ro-link">Cookies Settings</a>
+          <li class="footer-aside__item">
+            <a href="" class="footer-aside__link">Cookies Settings</a>
           </li>
         </ul>
       </div>
-      <div class="footer-rights">
-        <p class="footer__text">2022 FoodSta. All right reserved.</p>
+      <div class="footer-aside__wrap--rights">
+        <p class="footer-aside__text">2022 FoodSta. All right reserved.</p>
       </div>
     </div>
   </div>

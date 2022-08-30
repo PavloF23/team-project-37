@@ -172,4 +172,9 @@
   @media screen and (min-width: 768px) {
     position: sticky;
   }
+
+  &:hover,
+  &:focus {
+    background: $accent-btn-cl;
+  }
 }
