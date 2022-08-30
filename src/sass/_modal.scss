@@ -178,10 +178,11 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 20px;
+  bottom: 120px;
   width: 200px;
-  padding: 8px 12px;
-  border:  #ff705d  1px solid;
-  border-radius: 20px;
-  background-color: #ff705d;
+  padding: 16px 16px;
+  color: $primary-bg-color;
+  border:  $alarm-color  1px solid;
+  border-radius: 30px;
+  background-color: $alarm-color;
 }
