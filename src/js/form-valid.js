@@ -2,7 +2,7 @@ document.querySelector('.vali').onclick = myClick;
 
 function myClick() {
     
-    let form = document.querySelector('.form__input').value;
+    let form = document.querySelectorAll('.form__input').value;
    const x = document.getElementById("span");
     
     if (form == 0) {
